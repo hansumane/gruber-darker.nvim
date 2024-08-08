@@ -31,7 +31,9 @@ local function set_highlights()
     Keyword = { fg = c.yellow, bold = styles.bold },
     Typedef = { fg = c.yellow, bold = styles.bold },
 
+    IlluminatedWordRead = { bg = c.bg2, fg = c.fg },
     IlluminatedWordText = { bg = c.bg2, fg = c.fg },
+    IlluminatedWordWrite = { bg = c.bg2, fg = c.fg },
 
     IndentBlanklineChar = { fg = c.bg2 },
     IndentBlanklineSpaceChar = { fg = c.bg2 },
