@@ -45,16 +45,13 @@ local function set_highlights()
     Added = { fg = c.green },
     DiffAdd = { link = "Added" },
     diffAdded = { link = "Added" },
-    ["@text.diff.add"] = { link = "Added" },
     Changed = { fg = c.yellow },
     DiffChange = { link = "Changed" },
     DiffText = { link = "Changed" },
     diffLine = { link = "Changed" },
-    ["@text.diff.change"] = { link = "Changed" },
     Removed = { fg = c.red1 },
     DiffDelete = { link = "Removed" },
     diffRemoved = { link = "Removed" },
-    ["@text.diff.delete"] = { link = "Removed" },
 
     DiagnosticError = { fg = c.red1, bold = styles.bold },
     DiagnosticSignError = { fg = c.red1, reverse = styles.reverse },
@@ -71,6 +68,10 @@ local function set_highlights()
     DiagnosticUnnecessary = { link = "DiagnosticUnderlineHint"},
 
     ["@constructor"] = { link = "Function" },
+
+    ["@text.diff.add"] = { link = "Added" },
+    ["@text.diff.change"] = { link = "Changed" },
+    ["@text.diff.delete"] = { link = "Removed" },
 
     ["@comment"] = { link = "Comment" },
     ["@comment.error"] = { link = "DiagnosticError" },
