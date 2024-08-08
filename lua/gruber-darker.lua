@@ -18,6 +18,7 @@ local function set_highlights()
     lCursor = { bg = c.yellow, fg = c.none },
     CursorLineNr = { fg = c.yellow, bold = styles.bold },
 
+    Constant = { fg = c.quartz },
     Delimiter = { fg = c.fg },
     Directory = { fg = c.niagara },
     Function = { fg = c.niagara },
@@ -29,6 +30,8 @@ local function set_highlights()
     Comment = { fg = c.brown, italic = styles.italic },
     Keyword = { fg = c.yellow, bold = styles.bold },
     Typedef = { fg = c.yellow, bold = styles.bold },
+
+    IlluminatedWordText = { bg = c.bg2, fg = c.fg },
 
     IndentBlanklineChar = { fg = c.bg2 },
     IndentBlanklineSpaceChar = { fg = c.bg2 },
