@@ -5,7 +5,7 @@ config.options = {
   styles = {
     bold = true,
     italic = true,
-    reverse = true,
+    reverse = false,
     undercurl = true,
     underline = true
   }
