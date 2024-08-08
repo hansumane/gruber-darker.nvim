@@ -29,6 +29,7 @@ local function set_highlights()
     Type = { fg = c.quartz },
     Comment = { fg = c.brown, italic = styles.italic },
     Keyword = { fg = c.yellow, bold = styles.bold },
+    Todo = { fg = c.quartz, bold = styles.bold },
     Typedef = { fg = c.yellow, bold = styles.bold },
 
     IlluminatedWordRead = { bg = c.bg2, fg = c.fg },
@@ -40,6 +41,17 @@ local function set_highlights()
     IndentBlanklineSpaceCharBlankline = { fg = c.bg2 },
     IndentBlanklineContextChar = { fg = c.bg4 },
     IndentBlanklineContextSpaceChar = { fg = c.bg4 },
+
+    DiffAdd = { fg = c.green },
+    diffAdded = { link = "DiffAdd" },
+    ["@text.diff.add"] = { link = "DiffAdd" },
+    DiffChange = { fg = c.yellow },
+    DiffText = { link = "DiffChange" },
+    diffLine = { link = "DiffChange" },
+    ["@text.diff.change"] = { link = "DiffChange" },
+    DiffDelete = { fg = c.red1 },
+    diffRemoved = { link = "DiffDelete" },
+    ["@text.diff.delete"] = { link = "DiffDelete" },
 
     DiagnosticError = { fg = c.red1, bold = styles.bold },
     DiagnosticSignError = { fg = c.red1, reverse = styles.reverse },
@@ -56,6 +68,18 @@ local function set_highlights()
     DiagnosticUnnecessary = { link = "DiagnosticUnderlineHint"},
 
     ["@constructor"] = { link = "Function" },
+
+    ["@comment"] = { link = "Comment" },
+    ["@comment.error"] = { link = "DiagnosticError" },
+    ["@comment.warning"] = { link = "DiagnosticWarn" },
+    ["@comment.hint"] = { link = "DiagnosticHint" },
+    ["@comment.note"] = { link = "DiagnosticInfo" },
+    ["@comment.todo"] = { link = "Todo" },
+
+    ["@text.todo"] = { link = "@comment.todo" },
+    ["@text.note"] = { link = "@comment.note" },
+    ["@text.warning"] = { link = "@comment.warning" },
+    ["@text.danger"] = { link = "@comment.error" },
   }
 
   for group, highlight in pairs(highlights) do
