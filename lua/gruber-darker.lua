@@ -1,9 +1,9 @@
 local M = {}
 local config = require("gruber-darker.config")
+local c = require("gruber-darker.palette")
+local styles = config.options.styles;
 
 local function set_highlights()
-  local c = require("gruber-darker.palette")
-  local styles = config.options.styles;
   local highlights = {
     ColorColumn = { bg = c.bg1 },
     LineNr = { fg = c.bg4 },
@@ -63,6 +63,33 @@ local function set_highlights()
   end
 end
 
+local function set_terminal_colors()
+  -- black (bg/bg+1)
+  vim.g.terminal_color_0 = c.bg;
+  vim.g.terminal_color_8 = c.bg2;
+  -- red (red+1)
+  vim.g.terminal_color_1 = c.red1;
+  vim.g.terminal_color_9 = c.red1;
+  -- green (green)
+  vim.g.terminal_color_2 = c.green;
+  vim.g.terminal_color_10 = c.green;
+  -- yellow (yellow)
+  vim.g.terminal_color_3 = c.yellow;
+  vim.g.terminal_color_11 = c.yellow;
+  -- blue (niagara)
+  vim.g.terminal_color_4 = c.niagara;
+  vim.g.terminal_color_12 = c.niagara;
+  -- magenta (wisteria)
+  vim.g.terminal_color_5 = c.wisteria;
+  vim.g.terminal_color_13 = c.wisteria;
+  -- cyan (quartz)
+  vim.g.terminal_color_6 = c.quartz;
+  vim.g.terminal_color_14 = c.quartz;
+  -- white (fg/fg+1)
+  vim.g.terminal_color_7 = c.fg;
+  vim.g.terminal_color_15 = c.fg2;
+end
+
 function M.colorscheme()
   vim.opt.termguicolors = true
   if vim.g.colors_name then
@@ -72,6 +99,7 @@ function M.colorscheme()
   vim.g.colors_name = "gruber-darker"
 
   set_highlights()
+  set_terminal_colors()
 end
 
 ---@param params Options | nil
