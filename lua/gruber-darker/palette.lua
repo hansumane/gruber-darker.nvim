@@ -1,4 +1,5 @@
 local palette = {
+  none      = "NONE",
   fg        = "#e4e4ef",
   fg1       = "#f4f4ff",
   fg2       = "#f5f5f5",
