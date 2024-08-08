@@ -32,9 +32,9 @@ local function set_highlights()
     Todo = { fg = c.quartz, bold = styles.bold },
     Typedef = { fg = c.yellow, bold = styles.bold },
 
-    IlluminatedWordRead = { bg = c.bg2, fg = c.fg },
-    IlluminatedWordText = { bg = c.bg2, fg = c.fg },
-    IlluminatedWordWrite = { bg = c.bg2, fg = c.fg },
+    IlluminatedWordRead = { bg = c.bg2, fg = c.fg1 },
+    IlluminatedWordText = { bg = c.bg2, fg = c.fg1 },
+    IlluminatedWordWrite = { bg = c.bg2, fg = c.fg1 },
 
     IndentBlanklineChar = { fg = c.bg2 },
     IndentBlanklineSpaceChar = { fg = c.bg2 },
