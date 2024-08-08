@@ -7,8 +7,10 @@ local function set_highlights()
   local highlights = {
     ColorColumn = { bg = c.bg1 },
     LineNr = { fg = c.bg4 },
+    Visual = { bg = c.niagara_2 },
     Conceal = { bg = c.bg, fg = c.fg },
     Normal = { bg = c.bg, fg = c.fg },
+    Search = { bg = c.niagara, fg = c.bg1 },
 
     Cursor = { bg = c.yellow },
     CursorColumn = { bg = c.bg2 },
@@ -17,6 +19,8 @@ local function set_highlights()
     CursorIM = { bg = c.yellow, fg = c.none },
     lCursor = { bg = c.yellow, fg = c.none },
     CursorLineNr = { fg = c.yellow, bold = styles.bold },
+    CurSearch = { link = "Search" },
+    IncSearch = { link = "Search" },
 
     Constant = { fg = c.quartz },
     Delimiter = { fg = c.fg },
