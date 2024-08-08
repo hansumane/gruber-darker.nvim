@@ -41,9 +41,9 @@ local function set_highlights()
     IndentBlanklineContextChar = { fg = c.bg4 },
     IndentBlanklineContextSpaceChar = { fg = c.bg4 },
 
-    DiagnosticError = { fg = c.red, bold = styles.bold },
-    DiagnosticSignError = { fg = c.red, reverse = styles.reverse },
-    DiagnosticUnderlineError = { fg = c.red, undercurl = styles.undercurl },
+    DiagnosticError = { fg = c.red1, bold = styles.bold },
+    DiagnosticSignError = { fg = c.red1, reverse = styles.reverse },
+    DiagnosticUnderlineError = { fg = c.red1, undercurl = styles.undercurl },
     DiagnosticWarn = { fg = c.yellow, bold = styles.bold },
     DiagnosticSignWarn = { fg = c.yellow, bold = styles.bold, reverse = styles.reverse },
     DiagnosticUnderlineWarn = { fg = c.yellow, bold = styles.bold, undercurl = styles.undercurl },
