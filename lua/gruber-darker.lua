@@ -46,7 +46,7 @@ local function set_highlights()
     IndentBlanklineContextSpaceChar = { fg = c.bg4 },
 
     NvimTreeExecFile = { fg = c.green },
-    NvimTreeSpecialFile = { fg = c.wisteria, undercurl = styles.undercurl },
+    NvimTreeSpecialFile = { fg = c.wisteria, underline = styles.underline },
     NvimTreeSymlink = { fg = c.quartz, italic = styles.italic },
     NvimTreeImageFile = { link = "Title"  },
 
