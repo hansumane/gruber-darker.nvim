@@ -75,13 +75,17 @@ local function set_highlights()
     DiagnosticUnderlineHint = { fg = c.wisteria, bold = styles.bold, undercurl = styles.undercurl },
     DiagnosticUnnecessary = { link = "DiagnosticUnderlineHint"},
 
+    ["@comment"] = { link = "Comment" },
     ["@constructor"] = { link = "Function" },
+
+    ["@lsp.type.comment"] = {},
+    ["@lsp.type.comment.c"] = { link = "@comment" },
+    ["@lsp.type.comment.cpp"] = { link = "@comment" },
 
     ["@text.diff.add"] = { link = "Added" },
     ["@text.diff.change"] = { link = "Changed" },
     ["@text.diff.delete"] = { link = "Removed" },
 
-    ["@comment"] = { link = "Comment" },
     ["@comment.error"] = { link = "DiagnosticError" },
     ["@comment.warning"] = { link = "DiagnosticWarn" },
     ["@comment.hint"] = { link = "DiagnosticHint" },
