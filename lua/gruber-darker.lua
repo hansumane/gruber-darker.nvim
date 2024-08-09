@@ -16,8 +16,6 @@ local function set_highlights()
     CursorColumn = { bg = c.bg2 },
     CursorLine = { bg = c.bg1 },
     TermCursor = { bg = c.yellow },
-    CursorIM = { bg = c.yellow, fg = c.none },
-    lCursor = { bg = c.yellow, fg = c.none },
     CursorLineNr = { fg = c.yellow, bold = styles.bold },
     CurSearch = { link = "Search" },
     IncSearch = { link = "Search" },
