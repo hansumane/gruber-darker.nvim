@@ -30,6 +30,7 @@ local function set_highlights()
     Special = { fg = c.yellow },
     SpecialChar = { fg = c.yellow },
     String = { fg = c.green },
+    Title = { fg = c.niagara },
     Type = { fg = c.quartz },
     Comment = { fg = c.brown, italic = styles.italic },
     Keyword = { fg = c.yellow, bold = styles.bold },
@@ -45,6 +46,11 @@ local function set_highlights()
     IndentBlanklineSpaceCharBlankline = { fg = c.bg2 },
     IndentBlanklineContextChar = { fg = c.bg4 },
     IndentBlanklineContextSpaceChar = { fg = c.bg4 },
+
+    NvimTreeExecFile = { fg = c.green },
+    NvimTreeSpecialFile = { fg = c.wisteria, undercurl = styles.undercurl },
+    NvimTreeSymlink = { fg = c.quartz, italic = styles.italic },
+    NvimTreeImageFile = { link = "Title"  },
 
     Added = { fg = c.green },
     DiffAdd = { link = "Added" },
