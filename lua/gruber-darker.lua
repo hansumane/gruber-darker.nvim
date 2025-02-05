@@ -61,6 +61,9 @@ local function set_highlights()
     DiffDelete = { link = "Removed" },
     diffRemoved = { link = "Removed" },
 
+    DiagnosticOk = { fg = c.green, bold = styles.bold },
+    DiagnosticSignOk = { fg = c.green, reverse = styles.reverse },
+    DiagnosticUnderlineOk = { fg = c.green, undercurl = styles.undercurl },
     DiagnosticError = { fg = c.red1, bold = styles.bold },
     DiagnosticSignError = { fg = c.red1, reverse = styles.reverse },
     DiagnosticUnderlineError = { fg = c.red1, undercurl = styles.undercurl },
