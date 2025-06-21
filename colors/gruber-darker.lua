@@ -1,1 +1,1 @@
-require("gruber-darker").colorscheme()
+require('gruber-darker').colorscheme()

@@ -1,7 +1,7 @@
 local M = {}
-local config = require("gruber-darker.config")
-local c = require("gruber-darker.palette")
-local styles = config.options.styles;
+local config = require('gruber-darker.config')
+local c = require('gruber-darker.palette')
+local styles = config.options.styles
 
 local function set_highlights()
   local highlights = {
@@ -17,8 +17,8 @@ local function set_highlights()
     CursorLine = { bg = c.bg1 },
     TermCursor = { bg = c.yellow },
     CursorLineNr = { fg = c.yellow, bold = styles.bold },
-    CurSearch = { link = "Search" },
-    IncSearch = { link = "Search" },
+    CurSearch = { link = 'Search' },
+    IncSearch = { link = 'Search' },
 
     Constant = { fg = c.quartz },
     Delimiter = { fg = c.fg },
@@ -48,18 +48,18 @@ local function set_highlights()
     NvimTreeExecFile = { fg = c.green },
     NvimTreeSpecialFile = { fg = c.wisteria, underline = styles.underline },
     NvimTreeSymlink = { fg = c.quartz, italic = styles.italic },
-    NvimTreeImageFile = { link = "Title"  },
+    NvimTreeImageFile = { link = 'Title'  },
 
     Added = { fg = c.green },
-    DiffAdd = { link = "Added" },
-    diffAdded = { link = "Added" },
+    DiffAdd = { link = 'Added' },
+    diffAdded = { link = 'Added' },
     Changed = { fg = c.yellow },
-    DiffChange = { link = "Changed" },
-    DiffText = { link = "Changed" },
-    diffLine = { link = "Changed" },
+    DiffChange = { link = 'Changed' },
+    DiffText = { link = 'Changed' },
+    diffLine = { link = 'Changed' },
     Removed = { fg = c.red1 },
-    DiffDelete = { link = "Removed" },
-    diffRemoved = { link = "Removed" },
+    DiffDelete = { link = 'Removed' },
+    diffRemoved = { link = 'Removed' },
 
     DiagnosticOk = { fg = c.green, bold = styles.bold },
     DiagnosticSignOk = { fg = c.green, reverse = styles.reverse },
@@ -76,29 +76,29 @@ local function set_highlights()
     DiagnosticHint = { fg = c.wisteria, bold = styles.bold },
     DiagnosticSignHint = { fg = c.wisteria, bold = styles.bold, reverse = styles.reverse },
     DiagnosticUnderlineHint = { fg = c.wisteria, bold = styles.bold, undercurl = styles.undercurl },
-    DiagnosticUnnecessary = { link = "DiagnosticUnderlineHint"},
+    DiagnosticUnnecessary = { link = 'DiagnosticUnderlineHint'},
 
-    ["@comment"] = { link = "Comment" },
-    ["@constructor"] = { link = "Function" },
+    ['@comment'] = { link = 'Comment' },
+    ['@constructor'] = { link = 'Function' },
 
-    ["@lsp.type.comment"] = {},
-    ["@lsp.type.comment.c"] = { link = "@comment" },
-    ["@lsp.type.comment.cpp"] = { link = "@comment" },
+    ['@lsp.type.comment'] = {},
+    ['@lsp.type.comment.c'] = { link = '@comment' },
+    ['@lsp.type.comment.cpp'] = { link = '@comment' },
 
-    ["@text.diff.add"] = { link = "Added" },
-    ["@text.diff.change"] = { link = "Changed" },
-    ["@text.diff.delete"] = { link = "Removed" },
+    ['@text.diff.add'] = { link = 'Added' },
+    ['@text.diff.change'] = { link = 'Changed' },
+    ['@text.diff.delete'] = { link = 'Removed' },
 
-    ["@comment.error"] = { link = "DiagnosticError" },
-    ["@comment.warning"] = { link = "DiagnosticWarn" },
-    ["@comment.hint"] = { link = "DiagnosticHint" },
-    ["@comment.note"] = { link = "DiagnosticInfo" },
-    ["@comment.todo"] = { link = "Todo" },
+    ['@comment.error'] = { link = 'DiagnosticError' },
+    ['@comment.warning'] = { link = 'DiagnosticWarn' },
+    ['@comment.hint'] = { link = 'DiagnosticHint' },
+    ['@comment.note'] = { link = 'DiagnosticInfo' },
+    ['@comment.todo'] = { link = 'Todo' },
 
-    ["@text.todo"] = { link = "@comment.todo" },
-    ["@text.note"] = { link = "@comment.note" },
-    ["@text.warning"] = { link = "@comment.warning" },
-    ["@text.danger"] = { link = "@comment.error" },
+    ['@text.todo'] = { link = '@comment.todo' },
+    ['@text.note'] = { link = '@comment.note' },
+    ['@text.warning'] = { link = '@comment.warning' },
+    ['@text.danger'] = { link = '@comment.error' },
   }
 
   for group, highlight in pairs(highlights) do
@@ -108,38 +108,38 @@ end
 
 local function set_terminal_colors()
   -- black (bg/bg+1)
-  vim.g.terminal_color_0 = c.bg;
-  vim.g.terminal_color_8 = c.bg2;
+  vim.g.terminal_color_0 = c.bg
+  vim.g.terminal_color_8 = c.bg2
   -- red (red+1)
-  vim.g.terminal_color_1 = c.red1;
-  vim.g.terminal_color_9 = c.red1;
+  vim.g.terminal_color_1 = c.red1
+  vim.g.terminal_color_9 = c.red1
   -- green (green)
-  vim.g.terminal_color_2 = c.green;
-  vim.g.terminal_color_10 = c.green;
+  vim.g.terminal_color_2 = c.green
+  vim.g.terminal_color_10 = c.green
   -- yellow (yellow)
-  vim.g.terminal_color_3 = c.yellow;
-  vim.g.terminal_color_11 = c.yellow;
+  vim.g.terminal_color_3 = c.yellow
+  vim.g.terminal_color_11 = c.yellow
   -- blue (niagara)
-  vim.g.terminal_color_4 = c.niagara;
-  vim.g.terminal_color_12 = c.niagara;
+  vim.g.terminal_color_4 = c.niagara
+  vim.g.terminal_color_12 = c.niagara
   -- magenta (wisteria)
-  vim.g.terminal_color_5 = c.wisteria;
-  vim.g.terminal_color_13 = c.wisteria;
+  vim.g.terminal_color_5 = c.wisteria
+  vim.g.terminal_color_13 = c.wisteria
   -- cyan (quartz)
-  vim.g.terminal_color_6 = c.quartz;
-  vim.g.terminal_color_14 = c.quartz;
+  vim.g.terminal_color_6 = c.quartz
+  vim.g.terminal_color_14 = c.quartz
   -- white (fg/fg+1)
-  vim.g.terminal_color_7 = c.fg;
-  vim.g.terminal_color_15 = c.fg2;
+  vim.g.terminal_color_7 = c.fg
+  vim.g.terminal_color_15 = c.fg2
 end
 
 function M.colorscheme()
   vim.opt.termguicolors = true
   if vim.g.colors_name then
-    vim.cmd("hi clear")
-    vim.cmd("syntax reset")
+    vim.cmd('hi clear')
+    vim.cmd('syntax reset')
   end
-  vim.g.colors_name = "gruber-darker"
+  vim.g.colors_name = 'gruber-darker'
 
   set_highlights()
   set_terminal_colors()

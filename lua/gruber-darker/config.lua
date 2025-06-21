@@ -13,7 +13,7 @@ config.options = {
 
 ---@param params Options | nil
 function config.extend(params)
-  config.options = vim.tbl_deep_extend("force", config.options, params or {})
+  config.options = vim.tbl_deep_extend('force', config.options, params or {})
 end
 
 return config
