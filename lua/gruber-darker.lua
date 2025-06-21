@@ -39,6 +39,11 @@ local function set_highlights()
     IlluminatedWordText = { bg = c.bg2, fg = c.fg1 },
     IlluminatedWordWrite = { bg = c.bg2, fg = c.fg1 },
 
+    -- indent-blankline (ibl) v3
+    IblIndent = { fg = c.bg2 },
+    IblWhitespace = { fg = c.bg2 },
+    IblScope = { fg = c.bg4 },
+    -- indent-blankline v2
     IndentBlanklineChar = { fg = c.bg2 },
     IndentBlanklineSpaceChar = { fg = c.bg2 },
     IndentBlanklineSpaceCharBlankline = { fg = c.bg2 },
