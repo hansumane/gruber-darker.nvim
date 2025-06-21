@@ -145,7 +145,7 @@ function M.colorscheme()
   set_terminal_colors()
 end
 
----@param params Options | nil
+---@param params gruber_darker.Options | nil
 function M.setup(params)
   config.extend(params)
 end

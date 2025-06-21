@@ -1,6 +1,6 @@
 local config = {}
 
----@class Options
+---@class gruber_darker.Options
 config.options = {
   styles = {
     bold = true,
@@ -11,7 +11,7 @@ config.options = {
   }
 }
 
----@param params Options | nil
+---@param params gruber_darker.Options | nil
 function config.extend(params)
   config.options = vim.tbl_deep_extend('force', config.options, params or {})
 end
