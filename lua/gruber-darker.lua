@@ -13,9 +13,10 @@ local function set_highlights()
     Search = { bg = c.niagara, fg = c.bg1 },
 
     Cursor = { bg = c.yellow },
+    lCursor = { bg = c.yellow },
+    TermCursor = { bg = c.yellow },
     CursorColumn = { bg = c.bg2 },
     CursorLine = { bg = c.bg1 },
-    TermCursor = { bg = c.yellow },
     CursorLineNr = { fg = c.yellow, bold = styles.bold },
     CurSearch = { link = 'Search' },
     IncSearch = { link = 'Search' },
