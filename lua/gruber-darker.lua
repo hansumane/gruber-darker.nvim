@@ -40,6 +40,8 @@ local function set_highlights()
     IlluminatedWordText = { bg = c.bg2, fg = c.fg1 },
     IlluminatedWordWrite = { bg = c.bg2, fg = c.fg1 },
 
+    -- mini.indentscope
+    MiniIndentscopeSymbol = { fg = c.bg4 },
     -- indent-blankline (ibl) v3
     IblIndent = { fg = c.bg2 },
     IblWhitespace = { fg = c.bg2 },

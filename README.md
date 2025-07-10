@@ -33,6 +33,7 @@ Supported Plugins
 -
 + [lualine](https://github.com/nvim-lualine/lualine.nvim.git)
 + [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua.git)
++ [mini.indentscope](https://github.com/echasnovski/mini.indentscope.git)
 + [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim.git)
 
 Credits
