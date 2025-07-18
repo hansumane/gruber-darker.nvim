@@ -13,6 +13,14 @@ return {
 }
 ```
 
+[mini.deps](https://github.com/echasnovski/mini.deps)
+```lua
+MiniDeps.add { source = 'hansumane/gruber-darker.nvim' }
+require('gruber-darker').setup()
+vim.o.background = 'dark'
+vim.cmd.colorscheme('gruber-darker')
+```
+
 Configuring
 -
 ```lua
