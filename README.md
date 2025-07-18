@@ -7,7 +7,7 @@ return {
   'hansumane/gruber-darker.nvim',
   config = function()
     require('gruber-darker').setup()
-    vim.opt.background = 'dark'
+    vim.o.background = 'dark'
     vim.cmd.colorscheme('gruber-darker')
   end
 }
