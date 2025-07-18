@@ -34,6 +34,8 @@ Supported Plugins
 + [lualine](https://github.com/nvim-lualine/lualine.nvim.git)
 + [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua.git)
 + [mini.indentscope](https://github.com/echasnovski/mini.indentscope.git)
++ [mini.tabline](https://github.com/echasnovski/mini.tabline.git)
++ [mini.statusline](https://github.com/echasnovski/mini.statusline.git)
 + [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim.git)
 
 Credits

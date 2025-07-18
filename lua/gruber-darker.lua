@@ -42,6 +42,24 @@ local function set_highlights()
 
     -- mini.indentscope
     MiniIndentscopeSymbol = { fg = c.bg4 },
+    -- mini.tabline
+    MiniTablineCurrent = { fg = c.yellow, bg = c.bg1, bold = styles.bold },
+    MiniTablineVisible = { fg = c.fg, bg = c.bg2,  bold = styles.bold },
+    MiniTablineHidden = { fg = c.fg, bg = c.bg2 },
+    MiniTablineModifiedCurrent = { fg = c.bg, bg = c.yellow, bold = styles.bold },
+    MiniTablineModifiedVisible = { fg = c.bg, bg = c.fg, bold = styles.bold },
+    MiniTablineModifiedHidden = { fg = c.bg, bg = c.fg },
+    -- mini.statusline
+    MiniStatuslineDevinfo = { bg = c.bg1, fg = c.fg1 },
+    MiniStatuslineFilename = { bg = c.bg, fg = c.fg },
+    MiniStatuslineFileinfo = { bg = c.bg1, fg = c.fg1 },
+    MiniStatuslineModeCommand = { bg = c.bg2, fg = c.fg2, bold = styles.bold },
+    MiniStatuslineModeInsert = { bg = c.bg2, fg = c.fg2, bold = styles.bold },
+    MiniStatuslineModeNormal = { bg = c.bg2, fg = c.fg2, bold = styles.bold },
+    MiniStatuslineModeReplace = { bg = c.bg2, fg = c.fg2, bold = styles.bold },
+    MiniStatuslineModeVisual = { bg = c.bg2, fg = c.fg2, bold = styles.bold },
+    MiniStatuslineModeOther = { bg = c.bg2, fg = c.fg2 },
+    MiniStatuslineInactive = { bg = c.bg1, fg = c.fg },
     -- indent-blankline (ibl) v3
     IblIndent = { fg = c.bg2 },
     IblWhitespace = { fg = c.bg2 },
